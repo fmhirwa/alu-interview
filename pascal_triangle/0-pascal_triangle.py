@@ -5,14 +5,15 @@
 
 
 def pascal_triangle(n):
-    """Returns a list of lists of integers representing the Pascals triangle of n.
+    """Returns a list of lists of integers representing
+    the Pascals triangle of n.
 
     Args:
         n: The number of rows in the Pascals triangle.
 
     Returns:
-        An empty list if n <= 0, otherwise a list of lists of integers representing
-        the Pascals triangle of n.
+        An empty list if n <= 0, otherwise a list of lists of 
+        integers representing the Pascals triangle of n.
     """
 
     if n <= 0:
@@ -21,7 +22,7 @@ def pascal_triangle(n):
     # Initialize the Pascals triangle.
     pascal_triangle = [[1]]
 
-    # Iterate over the rows of the Pascals triangle, starting from the second row.
+    # Iterate over the rows starting from the second row.
     for i in range(1, n):
         # Initialize the current row.
         current_row = []
