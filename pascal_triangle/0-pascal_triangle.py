@@ -31,7 +31,9 @@ def pascal_triangle(n):
 
         # Calculate the remaining elements of the current row.
         for j in range(1, i):
-            current_row.append(pascal_triangle[i - 1][j - 1] + pascal_triangle[i - 1][j])
+            current_row.append(
+                pascal_triangle[i - 1][j - 1] + pascal_triangle[i - 1][j]
+            )
 
         # Add the last element of the current row, which is always 1.
         current_row.append(1)
